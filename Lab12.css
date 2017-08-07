@@ -1,0 +1,53 @@
+body {
+	background-color: lightcyan;
+}
+
+ul {
+	text-align: center;
+	list-style-type: none;
+	background-color: cornflowerblue;
+	margin-left:30%;
+	width:40%;
+	padding:0;
+	border: .5px dashed;
+}
+
+#all {
+	width:100%;
+	background-color: mediumaquamarine;
+	height: 100%;
+	margin-top: 5%;
+}
+
+h1{
+	text-align:center;
+}
+
+#tasks {
+	border:2px solid;
+	width:45%;
+	margin-left: 25%;
+}
+
+input {
+	width:15%;
+	margin:5px;
+}
+
+form {
+	margin-left:4.5%;
+}
+
+form, #filt {
+	
+	text-align: center;
+	margin-right: 3%;
+}
+
+button {
+	background-color:skyblue;
+	width:5%;
+	border-radius: 5px 10px 10px 5px;
+	font-size: 14px;
+
+}

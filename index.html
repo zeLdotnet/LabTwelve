@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Angular: To-Do</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+		<script src="Lab12.js"></script>
+		<link rel="stylesheet" type="text/css" href="Lab12.css">
+	</head>
+
+	<body ng-app="toDo" ng-controller="toDoController">
+			
+
+		<div id="all">
+			<form ng-submit="addTo(taskList)"> 
+				
+				<input id="toDo" ng-model="taskList" required type="text" name="To-Do" placeholder="add task here">
+
+				<button type="submit">add</button>
+			</form>
+
+			<div id="filt">
+				<input ng-model="filt" type="text" name="filterToDo" placeholder="type to filter">
+			</div>
+			
+			
+			<div id="tasks">
+				<h1>2Do</h1>
+					<ul>	
+						<li ng-repeat="task in list | filter : filt track by $index"> {{task}} </li>	
+					</ul>
+			</div>
+		</div>
+		
+
+
+
+
+
+
+
+
+	</body>
+</html>
